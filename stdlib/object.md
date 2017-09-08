@@ -378,19 +378,19 @@ Object.prototype.toString.call(value)
 
 类型      |返回值|行为描述
 ----------|-----|-------
-Object(默认)|`[object ObjectName]`| 其中 ObjectName 是对象类型的名称。
-数值 Number|   `[object Number]`|返回数值的字符串表示。还可返回以指定进制表示的字符串，请参考[Number.toString()](/stdlib/number.html)。
-字符串 String|  `[object String]`|返回 String 对象的值。
-布尔值 Boolean|  `[object Boolean]`|如果布尔值是true，则返回"true"。否则返回"false"。
-undefined| `[object Undefined]`|
-null|   `[object Null]`|
-数组 Array|    `[object Array]`|将 Array 的每个元素转换为字符串，并将它们依次连接起来，两个元素之间用英文逗号作为分隔符进行拼接。
-arguments对象| `[object Arguments]`|
-函数 Function| `[object Function]`| 返回如下格式的字符串，其中 functionname 是一个函数的名称，此函数的 toString 方法被调用： "function functionname() { [native code] }"
-Error对象|  `[object Error]`|返回一个包含相关错误信息的字符串。
-Date对象|   `[object Date]` |返回日期的文本表示。
-RegExp对象|`[object RegExp]`|
-其他对象|   `[object Object]`|
+Object(默认)|[object ObjectName]| 其中 ObjectName 是对象类型的名称。
+数值 Number|   [object Number]  |返回数值的字符串表示。还可返回以指定进制表示的字符串，请参考[Number.toString()](/stdlib/number.html)。
+字符串 String|  [object String] |返回 String 对象的值。
+布尔值 Boolean| [object Boolean]|如果布尔值是true，则返回"true"。否则返回"false"。
+undefined| [object Undefined]|
+null|   [object Null]|
+数组 Array| [object Array]|将 Array 的每个元素转换为字符串，并将它们依次连接起来，两个元素之间用英文逗号作为分隔符进行拼接。
+arguments对象| [object Arguments]|
+函数 Function|  [object Function]| 返回如下格式的字符串，其中 functionname 是一个函数的名称，此函数的 toString 方法被调用： "function functionname() { [native code] }"
+Error对象|[object Error]|返回一个包含相关错误信息的字符串。
+Date对象| [object Date] |返回日期的文本表示。
+RegExp对象|[object RegExp]|
+其他对象|   [object Object]|
 
 也就是说，`Object.prototype.toString`可以得到一个实例对象的构造函数。
 
