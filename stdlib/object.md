@@ -231,7 +231,7 @@ o.valueOf = function (){
 
 上面代码自定义了`o`对象的`valueOf`方法，于是`1 + o`就得到了`3`。这种方法就相当于用`o.valueOf`覆盖`Object.prototype.valueOf`。
 
-** 关于 `valueOf()` 函数的详解 **
+** JavaScript `valueOf()` 函数的详解 ** [引自](http://www.365mini.com/page/javascript-valueof.htm)
 
 `valueOf()` 函数用于返回指定对象的原始值。
 
