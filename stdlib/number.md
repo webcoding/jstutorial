@@ -64,13 +64,21 @@ Number.MIN_SAFE_INTEGER // -9007199254740991
 
 ### Number.prototype.toString()
 
-`Number`对象部署了自己的`toString`方法，用来将一个数值转为字符串形式。
+`Number`对象部署了自己的`toString`方法，用来将一个数值转为指定进制的字符串形式。
 
 ```javascript
 (10).toString() // "10"
 ```
 
 `toString`方法可以接受一个参数，表示输出的进制。如果省略这个参数，默认将数值先转为十进制，再输出字符串；否则，就根据参数指定的进制，将一个数字转化成某个进制的字符串。
+
+```javascript
+// 语法
+numberObject.toString( [ radix ] )
+```
+
+参数radix，可选，支持 [2, 36] 之间的整数。例如：参数值为2，则表示二进制；为8，则表示八进制；为16，则表示十六进制。
+如果省略参数radix，则默认为10(十进制)。
 
 ```javascript
 (10).toString(2) // "1010"
