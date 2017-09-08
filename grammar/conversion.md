@@ -95,6 +95,8 @@ Number([5]) // 5
 
 3. 如果`toString`方法返回的是对象，就报错。
 
+`valueOf` 方法更多参见[valueOf()详解](/stdlib/object.html)
+
 请看下面的例子。
 
 ```javascript
